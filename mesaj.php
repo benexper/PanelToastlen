@@ -1,1 +1,1 @@
-sekeke
+Herhangi Bir Duyuru Bulunmamaktadır.
