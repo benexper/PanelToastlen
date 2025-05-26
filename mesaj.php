@@ -1,2 +1,5 @@
-Herhangi Bir Duyuru Bulunmamaktadır.
-Telegram t.me/experyouspanel
+‼️ GÜNCELLEME DUYURUSU ‼️
+PANELLERİMİZDE BULK KEYS ÖZELLİĞİ AKTİF HALE GETİRİLMİŞTİR 
+PANELİNİZE EKLETMEK İÇİN TELEGRAMDAN İLETİSİME GEÇEBİLİRSİNİZ.
+
+27/05/2025 (Güncelleme Tarihi)
