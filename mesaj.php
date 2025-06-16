@@ -1,1 +1,2 @@
-♥️ 𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 𝐌𝐘 𝐏𝐀𝐍𝐄𝐋 ♥️<br>  𝐁𝐔𝐘 𝐕𝐈𝐏 𝐏𝐀𝐍𝐄𝐋 𝐭.𝐦𝐞/𝐛𝐞𝐧𝐞𝐱𝐩𝐞𝐫 ✅<br> 𝐍𝐎 𝐂𝐑𝐀𝐂𝐊 + 𝐍𝐎 𝐃𝐃𝐎𝐒 𝐒𝐄𝐂𝐔𝐑𝐄 𝐏𝐀𝐍𝐄𝐋 ✅<br> 𝐏𝐀𝐍𝐄𝐋 𝐅𝐄𝐀𝐓𝐔𝐑𝐄𝐒: 𝐤𝐮𝐫𝐨𝐩𝐚𝐧𝐞𝐥.𝐜𝐨𝐦 🔮<br>
+‼️YENİ EKLENEN ÖZELLİK DUYURUSU‼️<br>
+PANELLERİMİZE SAATLİK KEY OLUŞTURMA ÖZELLİĞİ EKLENMİŞTİR ✅
