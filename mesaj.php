@@ -23,7 +23,20 @@
         </div>
     </div>
 
-    <!-- YENİ EKLENEN VURGULU BÖLÜM -->
+    <!-- YENİ EKLENEN İSME ÖZEL PANEL BÖLÜMÜ -->
+    <div style="background: linear-gradient(135deg, #ff8a00 0%, #ff5e00 100%); border-radius: 8px; padding: 15px; margin: 20px 0; box-shadow: 0 4px 12px rgba(255, 94, 0, 0.3); text-align: center; border: 2px dashed #fff;">
+        <p style="margin: 0; font-weight: 800; color: white; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+            ✨ SADECE SIZE ÖZEL PANEL ✨
+        </p>
+        <p style="margin: 10px 0 0; color: white; font-weight: 600; font-size: 15px;">
+            Başka Kimsede Bulunmaz! İstediğiniz İsme Kurulur<br>
+            <span style="background: rgba(0,0,0,0.2); padding: 5px 10px; border-radius: 4px; display: inline-block; margin-top: 8px; font-family: monospace;">
+                Örneğin: Experyousmod.kuropanel.com
+            </span>
+        </p>
+    </div>
+
+    <!-- KUROPANEL VURGULU BÖLÜM -->
     <div style="background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); border-radius: 8px; padding: 15px; margin: 25px 0; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.4); text-align: center;">
         <p style="margin: 0; font-weight: 800; color: white; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
             🔥 TÜM ÖZELLİKLER İÇİN HEMEN ZİYARET ET 🔥<br>
