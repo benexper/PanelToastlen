@@ -23,6 +23,16 @@
         </div>
     </div>
 
+    <!-- YENİ EKLENEN VURGULU BÖLÜM -->
+    <div style="background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); border-radius: 8px; padding: 15px; margin: 25px 0; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.4); text-align: center;">
+        <p style="margin: 0; font-weight: 800; color: white; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            🔥 TÜM ÖZELLİKLER İÇİN HEMEN ZİYARET ET 🔥<br>
+            <a href="https://kuropanel.com" style="color: #FFD700; text-decoration: none; font-size: 22px; display: inline-block; margin-top: 8px; border-bottom: 2px dashed #FFD700;">
+                KUROPANEL.COM
+            </a>
+        </p>
+    </div>
+
     <div style="text-align: center; margin-top: 15px;">
         <a href="https://t.me/benexper" style="display: inline-block; background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 8px rgba(110, 72, 170, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(110, 72, 170, 0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(110, 72, 170, 0.3)';">
             🔥 HEMEN SATIN AL (TELEGRAM) 🔥
@@ -30,6 +40,6 @@
     </div>
 
     <p style="text-align: center; margin-top: 15px; font-size: 13px; color: #777;">
-        <strong>🔍 TÜM ÖZELLİKLER:</strong> <a href="https://kuropanel.com" style="color: #6e48aa; text-decoration: underline; font-weight: 600;">KUROPANEL.COM</a>
+        <strong>✨ KUROPANEL - PROFESYONEL OYUN PANEL ÇÖZÜMLERİ ✨</strong>
     </p>
 </div>
