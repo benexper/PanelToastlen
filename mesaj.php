@@ -1,14 +1,14 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Playfair+Display:wght@700&display=swap');
     @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
     :root {
-        --primary: #6c5ce7;
-        --secondary: #a29bfe;
-        --accent: #fd79a8;
-        --text: #2d3436;
-        --light: #f5f6fa;
-        --dark: #2d3436;
+        --purple: #8A2BE2;
+        --pink: #FF1493;
+        --light-pink: #FF69B4;
+        --dark-purple: #6A0DAD;
+        --text: #2E2E2E;
+        --light: #F8F8FF;
     }
 
     .popup-overlay {
@@ -17,123 +17,126 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.85);
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 9999;
-        font-family: 'Poppins', sans-serif;
-        animation: fadeIn 0.3s ease-in-out;
+        font-family: 'Montserrat', sans-serif;
+        animation: fadeIn 0.4s ease-out;
     }
 
     .popup-container {
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        border-radius: 15px;
-        padding: 30px;
+        background: linear-gradient(145deg, #8A2BE2 0%, #FF1493 100%);
+        border-radius: 20px;
+        padding: 35px 30px;
         width: 90%;
-        max-width: 500px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 480px;
+        box-shadow: 0 15px 40px rgba(138, 43, 226, 0.5);
         text-align: center;
         position: relative;
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 2px solid rgba(255, 255, 255, 0.2);
     }
 
     .popup-title {
-        color: var(--primary);
-        font-size: 28px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        color: white;
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
     }
 
     .popup-badge {
-        background-color: var(--accent);
-        color: white;
-        padding: 5px 15px;
-        border-radius: 20px;
-        font-size: 14px;
-        font-weight: 600;
+        background-color: white;
+        color: var(--pink);
+        padding: 8px 20px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 700;
         display: inline-block;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 8px rgba(253, 121, 168, 0.3);
+        margin-bottom: 25px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
 
     .popup-content {
-        color: var(--text);
-        margin-bottom: 25px;
-        line-height: 1.6;
+        color: white;
+        margin-bottom: 30px;
+        line-height: 1.7;
+        font-size: 17px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     }
 
     .popup-content p {
-        margin-bottom: 15px;
-        font-size: 16px;
+        margin-bottom: 18px;
     }
 
     .popup-content strong {
-        color: var(--primary);
+        color: white;
         font-weight: 700;
+        text-decoration: underline;
     }
 
     .popup-highlight {
-        background-color: rgba(108, 92, 231, 0.1);
-        border-left: 4px solid var(--primary);
-        padding: 12px;
-        margin: 20px 0;
-        border-radius: 0 8px 8px 0;
-        font-weight: 600;
-        color: var(--primary);
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 15px;
+        margin: 25px 0;
+        border-radius: 12px;
+        font-weight: 700;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 12px;
+        font-size: 18px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .popup-button {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 12px 25px;
-        margin: 5px;
-        border-radius: 8px;
-        font-weight: 600;
+        padding: 15px 30px;
+        margin: 8px 0;
+        border-radius: 12px;
+        font-weight: 700;
         text-decoration: none;
         transition: all 0.3s ease;
-        width: calc(100% - 10px);
+        width: 100%;
         box-sizing: border-box;
+        background-color: white;
+        color: var(--purple);
+        font-size: 18px;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .popup-button i {
-        margin-right: 10px;
-        font-size: 18px;
+        margin-right: 12px;
+        font-size: 20px;
     }
 
-    .popup-button:not(.continue-button) {
-        background-color: var(--primary);
-        color: white;
-        border: none;
-    }
-
-    .popup-button:not(.continue-button):hover {
-        background-color: #5649c0;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
-    }
-
-    .continue-button {
+    .popup-button:hover {
         background-color: var(--light);
-        color: var(--text);
-        border: 1px solid var(--secondary);
-        margin-top: 10px;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        color: var(--pink);
     }
 
-    .continue-button.disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
+    .popup-footer {
+        font-size: 13px;
+        margin-top: 20px;
+        color: rgba(255,255,255,0.8);
+        font-style: italic;
     }
 
     @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
+        from { opacity: 0; transform: scale(0.95); }
+        to { opacity: 1; transform: scale(1); }
     }
 
     @keyframes pulse {
@@ -143,27 +146,29 @@
     }
 
     .popup-badge {
-        animation: pulse 2s infinite;
+        animation: pulse 1.5s infinite;
+    }
+
+    .fa-gift {
+        color: var(--pink);
+        font-size: 24px;
     }
 </style>
 
 <div class="popup-overlay" id="campaignPopup">
     <div class="popup-container">
         <h2 class="popup-title">ÖZEL KAMPANYA</h2>
-        <div class="popup-badge">SINIRLI SÜRE!</div>
+        <div class="popup-badge">Sınırlı Kontenjan!</div>
         <div class="popup-content">
             <p>1 müşteri getirene <strong>1 ADET KEY PANEL</strong> hediye!</p>
             <div class="popup-highlight">
                 <i class="fas fa-gift"></i> 1 MÜŞTERİ = 1 ÜCRETSİZ PANEL
             </div>
-            <p>Yeni müşterilerinizi bize yönlendirin, her yönlendirdiginiz müşterilerin satın alımında size 1 adet ücretsiz key panel hediye edelim!</p>
+            <p>Yeni müşterilerinizi bize yönlendirin, her yönlendirdiğiniz müşterinin satın alımında size 1 adet ücretsiz key panel hediye edelim!</p>
         </div>
         <a href="https://t.me/benexper" target="_blank" class="popup-button">
             <i class="fab fa-telegram"></i> KATILMAK İÇİN TIKLA
         </a>
-        <button id="continueButton" class="popup-button continue-button disabled">
-            DEVAM ET (<span id="countdown">1</span>)
-        </button>
-        <p style="font-size: 14px; margin-top: 15px; color: var(--text);">Kampanya süresi dolana kadar geçerlidir</p>
+        <p class="popup-footer">Kampanya süresi dolana kadar geçerlidir</p>
     </div>
 </div>
