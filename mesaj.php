@@ -1,87 +1,54 @@
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+<div style="font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; max-width: 100%;">
+    <h3 style="color: #6e48aa; border-bottom: 2px solid #6e48aa; padding-bottom: 10px; margin-bottom: 15px; text-align: center; font-weight: 700;">🚀 <span style="text-shadow: 0 2px 4px rgba(0,0,0,0.1);">PREMIUM VIP PANEL</span> 🚀</h3>
     
-    .campaign-notification {
-        font-family: 'Inter', sans-serif;
-        background: rgba(255, 255, 255, 0.95);
-        border-left: 4px solid #8A2BE2;
-        padding: 15px;
-        margin: 20px 0;
-        border-radius: 0 8px 8px 0;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        max-width: 500px;
-        position: relative;
-    }
-    
-    .campaign-notification h3 {
-        color: #8A2BE2;
-        font-size: 18px;
-        font-weight: 600;
-        margin: 0 0 10px 0;
-    }
-    
-    .campaign-notification p {
-        color: #333;
-        font-size: 14px;
-        line-height: 1.5;
-        margin: 8px 0;
-    }
-    
-    .campaign-notification .highlight {
-        background: rgba(138, 43, 226, 0.1);
-        padding: 8px 12px;
-        border-radius: 6px;
-        margin: 12px 0;
-        font-weight: 500;
-        display: inline-block;
-    }
-    
-    .campaign-notification a {
-        display: inline-block;
-        background: #8A2BE2;
-        color: white;
-        text-decoration: none;
-        padding: 8px 16px;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: 500;
-        margin-top: 10px;
-        transition: background 0.2s;
-    }
-    
-    .campaign-notification a:hover {
-        background: #7B1FA2;
-    }
-    
-    .campaign-notification .telegram-icon {
-        margin-right: 8px;
-    }
-    
-    .campaign-notification .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        font-size: 14px;
-        color: #888;
-        cursor: pointer;
-    }
-</style>
+    <div style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%); border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <p style="margin: 0; font-weight: 600; color: #6e48aa; text-align: center;">⭐ <span style="border-bottom: 1px dashed #6e48aa;">ÖZEL GÜVENLİK & PERFORMANS</span> ⭐</p>
+    </div>
 
-<div class="campaign-notification">
-    <h3>Özel Kampanya</h3>
-    <p>1 müşteri getirene <strong>1 adet Key Panel</strong> hediye!</p>
-    <div class="highlight">1 MÜŞTERİ = 1 ÜCRETSİZ PANEL</div>
-    <p>Yeni müşterilerinizi bize yönlendirin, her yönlendirdiğiniz müşteri için size 1 adet ücretsiz key panel hediye edelim.</p>
-    <a href="https://t.me/benexper" target="_blank">
-        <span class="telegram-icon">📢</span> Katılmak İçin Tıkla
-    </a>
-    <button class="close-btn">×</button>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;">
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🛡️ DDoS Korumalı</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Tüm DDoS saldırılarına karşı tam koruma</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🔒 Crack Korumalı</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Panelinizin/Modunuzun Cracklenmesini imkansız hale getirir</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">⚙️ Özelleştirilebilir Panel</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Tamamen kişisel zevkinize göre düzenlenebilir</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">📞 7/24 Öncelikli Destek</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Anında çözüm için özel destek hattı</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">👑 Bayi / Admin / Owner Sistemi</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Çoklu kullanıcı yönetimi ile kolay kontrol</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🎯 İsme/Kişiye Özel Panel</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Sadece size özel panel/Sadece Sizde Olur İzinsiz Kimse Giriş Yapamaz. (örnek: isminiz.kuropanel.com)</p>
+        </div>
+    </div>
+
+    <!-- KUROPANEL VURGULU BÖLÜM -->
+    <div style="background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); border-radius: 8px; padding: 15px; margin: 25px 0; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.4); text-align: center;">
+        <p style="margin: 0; font-weight: 800; color: white; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            🔥 TÜM ÖZELLİKLER İÇİN HEMEN ZİYARET ET 🔥<br>
+            <a href="https://kuropanel.com" style="color: #FFD700; text-decoration: none; font-size: 22px; display: inline-block; margin-top: 8px; border-bottom: 2px dashed #FFD700;">
+                KUROPANEL.COM
+            </a>
+        </p>
+    </div>
+
+    <div style="text-align: center; margin-top: 15px;">
+        <a href="https://t.me/benexper" style="display: inline-block; background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 8px rgba(110, 72, 170, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(110, 72, 170, 0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(110, 72, 170, 0.3)';">
+            🔥 HEMEN SATIN AL 🔥
+        </a>
+    </div>
+
+    <p style="text-align: center; margin-top: 15px; font-size: 13px; color: #777;">
+        <strong>✨ KUROPANEL - PROFESYONEL OYUN PANEL ÇÖZÜMLERİ ✨</strong>
+    </p>
 </div>
-
-<script>
-    document.querySelector('.close-btn').addEventListener('click', function() {
-        this.parentElement.style.display = 'none';
-    });
-</script>
