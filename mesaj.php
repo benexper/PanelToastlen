@@ -1,44 +1,71 @@
-<div style="background: linear-gradient(135deg, #8e24aa, #ec407a); color: white; padding: 25px; border-radius: 12px; font-family: 'Segoe UI', Arial, sans-serif; width: 380px; margin: 0 auto; box-shadow: 0 8px 25px rgba(0,0,0,0.4); position: relative; overflow: hidden;">
-    <!-- Header with animated gradient border -->
-    <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #ec407a, #8e24aa, #ec407a); background-size: 200% auto; animation: gradient 2s linear infinite;"></div>
+<div style="font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; max-width: 100%;">
+    <h3 style="color: #6e48aa; border-bottom: 2px solid #6e48aa; padding-bottom: 10px; margin-bottom: 15px; text-align: center; font-weight: 700;">🚀 <span style="text-shadow: 0 2px 4px rgba(0,0,0,0.1);">PREMIUM VIP PANEL</span> 🚀</h3>
     
-    <h1 style="color: white; text-align: center; font-size: 24px; margin-bottom: 10px; font-weight: 700; text-transform: uppercase;">ÖNEMLİ DUYURU</h1>
-    <h2 style="color: #ff80ab; text-align: center; font-size: 20px; margin-top: 0; margin-bottom: 25px; font-weight: 600;">YENİ GÜNCELLEME!</h2>
+    <div style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%); border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+        <p style="margin: 0; font-weight: 600; color: #6e48aa; text-align: center;">⭐ <span style="border-bottom: 1px dashed #6e48aa;">ÖZEL GÜVENLİK & PERFORMANS</span> ⭐</p>
+    </div>
 
-    <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #ff80ab;">
-        <h3 style="color: #ffffff; margin-top: 0; font-size: 16px; font-weight: 600; text-align: center; margin-bottom: 15px;">YENİ ÖZELLİKLER!</h3>
-
-        <div style="display: flex; align-items: center; margin-bottom: 12px;">
-            <div style="width: 18px; height: 18px; border: 2px solid #ff80ab; border-radius: 50%; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
-                <div style="width: 12px; height: 12px; background: #ff80ab; border-radius: 50%;"></div>
-            </div>
-            <span style="font-weight: 500; color: #ffffff;">Online Panel eklendi!</span>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;">
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🛡️ DDoS Korumalı</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Tüm DDoS saldırılarına karşı tam koruma</p>
         </div>
-
-        <div style="display: flex; align-items: center; margin-bottom: 12px;">
-            <div style="width: 18px; height: 18px; border: 2px solid #ff80ab; border-radius: 50%; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
-                <div style="width: 12px; height: 12px; background: #ff80ab; border-radius: 50%;"></div>
-            </div>
-            <span style="font-weight: 500; color: #ffffff;">Uzakdan versiyon kontrolü eklendi!</span>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🔒 Crack Korumalı</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Panelinizin/Modunuzun Cracklenmesini imkansız hale getirir</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">⚙️ Özelleştirilebilir Panel</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Tamamen kişisel zevkinize göre düzenlenebilir</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">📞 7/24 Öncelikli Destek</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Anında çözüm için özel destek hattı</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">👑 Bayi / Admin / Owner Sistemi</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Çoklu kullanıcı yönetimi ile kolay kontrol</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🎯 İsme/Kişiye Özel Panel</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Sadece size özel panel/Sadece Sizde Olur İzinsiz Kimse Giriş Yapamaz. (örnek: isminiz.kuropanel.com)</p>
         </div>
     </div>
 
-    <div style="background: rgba(255,87,34,0.1); border-left: 4px solid #ff80ab; padding: 12px; margin-bottom: 20px; border-radius: 0 4px 4px 0;">
-        <p style="margin: 0; font-weight: 600; color: #ff7043; font-size: 14px;">
-            <span style="color: #ec407a; font-weight: 700; margin-right: 5px;">!</span>
-            Artık yeni versiyon çıktığında (örnek: V2), V1 modunu kapatıp kullanıcıların V2'ye geçmelerini zorunlu kılabilirsiniz!
+    <!-- YENİ EKLENEN ÖZELLİKLER -->
+    <div style="background: linear-gradient(135deg, #ff7a00 0%, #ff3e00 100%); border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);">
+        <p style="margin: 0; font-weight: 800; color: white; text-align: center; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            ⭐ <span style="border-bottom: 2px solid #FFD700;">YENİ EKLENEN ÖZELLİKLER</span> ⭐
+        </p>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;">
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🌐 Online Panel Sistemi Güncellendi</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Daha Stabil Ve Daha Gelişmiş Online System.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🔄 Versiyon Kontrol Sistemi</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Yeni versiyon kontrolü ile V1 (Eski Mod )modunu engelleyebilir ve kullanıcılarınızı otomatik olarak V2'ye yönlendirebilirsiniz. Böylece V1'deki sorunlar (örneğin: banlar, güvenlik açıkları) Müşterileri Etkilemez. Ayrıca, V1'e giriş yapmak isteyen kullanıcılara bildirim gönderilir ve onları V2'ye geçmeleri için bilgilendirirsiniz</p>
+        </div>
+    </div>
+
+    <!-- KUROPANEL VURGULU BÖLÜM -->
+    <div style="background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); border-radius: 8px; padding: 15px; margin: 25px 0; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.4); text-align: center;">
+        <p style="margin: 0; font-weight: 800; color: white; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            🔥 TÜM ÖZELLİKLER İÇİN HEMEN ZİYARET ET 🔥<br>
+            <a href="https://kuropanel.com" style="color: #FFD700; text-decoration: none; font-size: 22px; display: inline-block; margin-top: 8px; border-bottom: 2px dashed #FFD700;">
+                KUROPANEL.COM
+            </a>
         </p>
     </div>
 
-    <div style="text-align: center; margin-top: 20px; font-size: 11px; color: rgba(255,255,255,0.5);">
-        © DEVELOPED BY EXPERVOUS
+    <div style="text-align: center; margin-top: 15px;">
+        <a href="https://t.me/benexper" style="display: inline-block; background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 8px rgba(110, 72, 170, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(110, 72, 170, 0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(110, 72, 170, 0.3)';">
+            🔥 HEMEN SATIN AL 🔥
+        </a>
     </div>
-</div>
 
-<style>
-    @keyframes gradient {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-    }
-</style>
+    <p style="text-align: center; margin-top: 15px; font-size: 13px; color: #777;">
+        <strong>✨ KUROPANEL - PROFESYONEL OYUN PANEL ÇÖZÜMLERİ ✨</strong>
+    </p>
+</div>
