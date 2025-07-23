@@ -45,7 +45,7 @@
         </div>
         <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
             <p style="margin: 0; font-weight: 600; color: #6e48aa;">🔄 Versiyon Kontrol Sistemi</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Yeni versiyon kontrolü ile V1 (Eski Mod )modunu engelleyebilir ve kullanıcılarınızı otomatik olarak V2'ye yönlendirebilirsiniz. Böylece V1'deki sorunlar (örneğin: banlar, güvenlik açıkları) Müşterileri Etkilemez. Ayrıca, V1'e giriş yapmak isteyen kullanıcılara bildirim gönderilir ve onları V2'ye geçmeleri için bilgilendirirsiniz</p>
+            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Yeni versiyon kontrolü ile Eski modunu engelleyebilir ve kullanıcılarınızı otomatik olarak Yeni Moda yönlendirebilirsiniz. Böylece Eski Moddaki sorunlar (örneğin: banlar, güvenlik açıkları) Müşterileri Etkilemez. Ayrıca, Eski Moda giriş yapmak isteyen kullanıcılara bildirim gönderilir ve onları Yeni Moda geçmeleri için bilgilendirirsiniz</p>
         </div>
     </div>
 
