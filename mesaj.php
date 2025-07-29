@@ -1,5 +1,8 @@
 <div class="modal-header">
     <h5 class="modal-title" id="announcementModalLabel">📢 PANEL GÜNCELLEME BİLDİRİMİ</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
 </div>
 <div class="modal-body">
     <div class="announcement-content">
@@ -23,9 +26,6 @@
             <i class="fas fa-info-circle"></i> <strong>Detaylı bilgi ve destek için:</strong> <a href="https://t.me/Benexper" target="_blank">t.me/Benexper</a>
         </div>
     </div>
-</div>
-<div class="modal-footer">
-    <button type="button" class="btn btn-primary close-announcement">Devam Et</button>
 </div>
 
 <style>
@@ -58,5 +58,8 @@
     }
     .modal-title {
         color: #007bff;
+    }
+    .close {
+        font-size: 1.5rem;
     }
 </style>
