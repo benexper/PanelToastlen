@@ -1,71 +1,308 @@
-<div style="font-family: 'Segoe UI', Arial, sans-serif; color: #333; line-height: 1.6; max-width: 100%;">
-    <h3 style="color: #6e48aa; border-bottom: 2px solid #6e48aa; padding-bottom: 10px; margin-bottom: 15px; text-align: center; font-weight: 700;">🚀 <span style="text-shadow: 0 2px 4px rgba(0,0,0,0.1);">PREMIUM VIP PANEL</span> 🚀</h3>
+<?php
+// Veritabanı bağlantısı (gerekiyorsa)
+// $db = new PDO("mysql:host=localhost;dbname=panel_db", "kullanici", "sifre");
+
+// Duyuru verileri
+$duyurular = [
+    [
+        'baslik' => 'Fiyat Güncellemesi',
+        'icerik' => 'Panel fiyatları güncellenmiştir. Artık aylık ücret 120 TL\'dir.',
+        'tarih' => '2023-11-15',
+        'onem' => 'yuksek', // yuksek, orta, dusuk
+        'ikon' => 'fa-money-bill-wave'
+    ],
+    [
+        'baslik' => 'Yeni Özellikler Eklendi!',
+        'icerik' => 'Versiyon kontrol eklendi. Anahtarların fiyatı uzaktan belirlenebilme, anahtar süresi ekleme/silme gibi yeni özellikler eklendi.',
+        'tarih' => '2023-11-10',
+        'onem' => 'yuksek',
+        'ikon' => 'fa-star'
+    ]
     
-    <div style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%); border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-        <p style="margin: 0; font-weight: 600; color: #6e48aa; text-align: center;">⭐ <span style="border-bottom: 1px dashed #6e48aa;">ÖZEL GÜVENLİK & PERFORMANS</span> ⭐</p>
+];
+?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Duyuruları</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yuksek-onem: #ff4757;
+            --orta-onem: #ffa502;
+            --dusuk-onem: #2ed573;
+            --arkaplan: #f1f2f6;
+            --kutu-arkaplan: #ffffff;
+            --golge: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --text-color: #2f3542;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--arkaplan);
+            color: var(--text-color);
+            padding: 20px;
+        }
+
+        .duyuru-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: #ff6b81;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: inline-block;
+        }
+
+        .header h1::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b81, #ffa502);
+            bottom: -10px;
+            left: 0;
+            border-radius: 2px;
+        }
+
+        .duyuru-kart {
+            background-color: var(--kutu-arkaplan);
+            border-radius: 10px;
+            box-shadow: var(--golge);
+            padding: 25px;
+            margin-bottom: 25px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid;
+        }
+
+        .duyuru-kart:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .duyuru-kart.yuksek {
+            border-left-color: var(--yuksek-onem);
+            animation: pulse 2s infinite;
+        }
+
+        .duyuru-kart.orta {
+            border-left-color: var(--orta-onem);
+        }
+
+        .duyuru-kart.dusuk {
+            border-left-color: var(--dusuk-onem);
+        }
+
+        .duyuru-baslik {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .duyuru-baslik i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: inherit;
+        }
+
+        .duyuru-kart.yuksek .duyuru-baslik i {
+            color: var(--yuksek-onem);
+        }
+
+        .duyuru-kart.orta .duyuru-baslik i {
+            color: var(--orta-onem);
+        }
+
+        .duyuru-kart.dusuk .duyuru-baslik i {
+            color: var(--dusuk-onem);
+        }
+
+        .duyuru-baslik h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .duyuru-icerik {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .duyuru-tarih {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            text-align: right;
+            font-style: italic;
+        }
+
+        .onem-etiket {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .yuksek .onem-etiket {
+            background-color: var(--yuksek-onem);
+            color: white;
+        }
+
+        .orta .onem-etiket {
+            background-color: var(--orta-onem);
+            color: white;
+        }
+
+        .dusuk .onem-etiket {
+            background-color: var(--dusuk-onem);
+            color: white;
+        }
+
+        .yeni-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #ff4757;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.4);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 71, 87, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 71, 87, 0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .ozellik-listesi {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .ozellik-listesi li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .ozellik-listesi li::before {
+            content: '✓';
+            color: #2ed573;
+            font-weight: bold;
+            position: absolute;
+            left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="duyuru-container">
+        <div class="header">
+            <h1><i class="fas fa-bullhorn"></i> Panel Duyuruları</h1>
+        </div>
+
+        <?php foreach ($duyurular as $index => $duyuru): ?>
+            <div class="duyuru-kart <?php echo $duyuru['onem']; ?>">
+                <?php if ($index < 2): ?>
+                    <div class="yeni-badge">YENİ</div>
+                <?php endif; ?>
+                <span class="onem-etiket"><?php echo $duyuru['onem']; ?></span>
+                
+                <div class="duyuru-baslik">
+                    <i class="fas <?php echo $duyuru['ikon']; ?>"></i>
+                    <h2><?php echo $duyuru['baslik']; ?></h2>
+                </div>
+                
+                <div class="duyuru-icerik">
+                    <p><?php echo $duyuru['icerik']; ?></p>
+                    
+                    <?php if ($duyuru['baslik'] == 'Yeni Özellikler Eklendi!'): ?>
+                        <ul class="ozellik-listesi">
+                            <li>Versiyon kontrol sistemi eklendi</li>
+                            <li>Anahtarların fiyatı uzaktan belirlenebilme</li>
+                            <li>Anahtar süresi ekleme/silme özelliği</li>
+                            <li>Gelişmiş yönetim paneli</li>
+                            <li>Kullanıcı dostu arayüz iyileştirmeleri</li>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+                
+                <div class="duyuru-tarih">
+                    <?php echo $duyuru['tarih']; ?>
+                </div>
+            </div>
+        <?php endforeach; ?>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;">
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🛡️ DDoS Korumalı</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Tüm DDoS saldırılarına karşı tam koruma</p>
-        </div>
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🔒 Crack Korumalı</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Panelinizin/Modunuzun Cracklenmesini imkansız hale getirir</p>
-        </div>
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">⚙️ Özelleştirilebilir Panel</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Tamamen kişisel zevkinize göre düzenlenebilir</p>
-        </div>
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">📞 7/24 Öncelikli Destek</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Anında çözüm için özel destek hattı</p>
-        </div>
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">👑 Bayi / Admin / Owner Sistemi</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Çoklu kullanıcı yönetimi ile kolay kontrol</p>
-        </div>
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); grid-column: span 2;">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🎯 İsme/Kişiye Özel Panel</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Sadece size özel panel/Sadece Sizde Olur İzinsiz Kimse Giriş Yapamaz. (örnek: isminiz.kuropanel.com)</p>
-        </div>
-    </div>
+    <script>
+        // Duyurulara tıklanabilirlik ekleme
+        document.querySelectorAll('.duyuru-kart').forEach(kart => {
+            kart.addEventListener('click', function() {
+                // Burada duyuru detay sayfasına yönlendirme yapılabilir
+                console.log('Duyuru seçildi: ' + this.querySelector('h2').textContent);
+            });
+        });
 
-    <!-- YENİ EKLENEN ÖZELLİKLER -->
-    <div style="background: linear-gradient(135deg, #ff7a00 0%, #ff3e00 100%); border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);">
-        <p style="margin: 0; font-weight: 800; color: white; text-align: center; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-            ⭐ <span style="border-bottom: 2px solid #FFD700;">YENİ EKLENEN ÖZELLİKLER</span> ⭐
-        </p>
-    </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px;">
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🌐 Online Panel Sistemi Güncellendi</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Daha Stabil Ve Daha Gelişmiş Online System.</p>
-        </div>
-        <div style="background: #fff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
-            <p style="margin: 0; font-weight: 600; color: #6e48aa;">🔄 Versiyon Kontrol Sistemi</p>
-            <p style="margin: 5px 0 0; font-size: 14px; color: #666;">Yeni versiyon kontrolü ile Eski modunu engelleyebilir ve kullanıcılarınızı otomatik olarak Yeni Moda yönlendirebilirsiniz. Böylece Eski Moddaki sorunlar (örneğin: banlar, güvenlik açıkları) Müşterileri Etkilemez. Ayrıca, Eski Moda giriş yapmak isteyen kullanıcılara bildirim gönderilir ve onları Yeni Moda geçmeleri için bilgilendirirsiniz</p>
-        </div>
-    </div>
-
-    <!-- KUROPANEL VURGULU BÖLÜM -->
-    <div style="background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); border-radius: 8px; padding: 15px; margin: 25px 0; box-shadow: 0 4px 12px rgba(110, 72, 170, 0.4); text-align: center;">
-        <p style="margin: 0; font-weight: 800; color: white; font-size: 18px; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">
-            🔥 TÜM ÖZELLİKLER İÇİN HEMEN ZİYARET ET 🔥<br>
-            <a href="https://kuropanel.com" style="color: #FFD700; text-decoration: none; font-size: 22px; display: inline-block; margin-top: 8px; border-bottom: 2px dashed #FFD700;">
-                KUROPANEL.COM
-            </a>
-        </p>
-    </div>
-
-    <div style="text-align: center; margin-top: 15px;">
-        <a href="https://t.me/benexper" style="display: inline-block; background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%); color: white; padding: 10px 25px; border-radius: 6px; text-decoration: none; font-weight: 600; box-shadow: 0 4px 8px rgba(110, 72, 170, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 6px 12px rgba(110, 72, 170, 0.4)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 8px rgba(110, 72, 170, 0.3)';">
-            🔥 HEMEN SATIN AL 🔥
-        </a>
-    </div>
-
-    <p style="text-align: center; margin-top: 15px; font-size: 13px; color: #777;">
-        <strong>✨ KUROPANEL - PROFESYONEL OYUN PANEL ÇÖZÜMLERİ ✨</strong>
-    </p>
-</div>
+        // Yüksek önemli duyurular için ekstra efekt
+        const yuksekOnemliDuyurular = document.querySelectorAll('.duyuru-kart.yuksek');
+        
+        yuksekOnemliDuyurular.forEach(duyuru => {
+            duyuru.addEventListener('mouseenter', function() {
+                this.style.animation = 'pulse 0.5s infinite';
+            });
+            
+            duyuru.addEventListener('mouseleave', function() {
+                this.style.animation = 'pulse 2s infinite';
+            });
+        });
+    </script>
+</body>
+</html>
