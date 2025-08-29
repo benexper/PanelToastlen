@@ -7,8 +7,8 @@
     
     <p style="margin: 12px 0; font-size: 18px; font-weight: bold; color: #8e44ad;">1 Müşteri Getir, 1 Ücretsiz Key Panel Kazan!</p>
     
-    <a href="#" style="display: inline-block; background-color: #ff5722; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; font-size: 18px; text-transform: uppercase; transition: background-color 0.3s;">
-        Katılmak İçin Tıklayın
+    <a href="https://t.me/Benexper" style="display: inline-block; background-color: #ff5722; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; margin-top: 15px; font-size: 18px; text-transform: uppercase; transition: background-color 0.3s;">
+        KATILMAK İÇİN TELEGRAM ADRESİMİZDEN ULAŞIN
     </a>
     
     <p style="font-size: 14px; color: #7f8c8d; margin-top: 20px;">Kampanya süresi dolana kadar geçerlidir!</p>
